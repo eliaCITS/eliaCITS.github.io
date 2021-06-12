@@ -344,13 +344,6 @@ html, body {
     padding: 85px 150px;
 }
 
-/* ------------------------------ Lessons ------------------------------ */
-
-.lesson>.middle {
-    height: 65%;
-    min-height: 400px;
-}
-
 .unit_lesson .item {
     color: #121212;
     
@@ -410,4 +403,101 @@ html, body {
     background: linear-gradient(200deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 75%),
       linear-gradient(121deg, rgba(191, 90, 128, 1), rgba(191, 90, 128, 0) 95%),
       linear-gradient(332deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 120%);
+}
+
+/* ------------------------------ Lessons ------------------------------ */
+
+.lesson>.middle {
+    height: 65%;
+    min-height: 400px;
+}
+
+ul.day_topic {
+    text-align: end;
+}
+
+.day {
+    display: inline-block;
+    
+    margin: 25px 100px;
+    
+    padding: 25px 50px 25px 250px;
+    
+    background-color: #f6c8c7;
+    
+    font-size: 2.6em;
+    font-weight: 800;
+}
+
+.topic {
+    display: inline-block;
+    
+    margin: 0px 100px;
+    
+    padding: 25px 50px 25px 100px;
+    
+    background-color: #cd7f9c;
+    
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.section {
+    text-align: start;
+}
+
+.section h3 {
+    display: inline-block;
+    
+    margin: 50px 0px 25px 25px;
+    
+    padding: 25px 25px;
+    
+    background-color: #19bdfe;
+    
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+#vocab.section h3 {
+    margin-top: 0px !important;
+}
+
+.section p {
+    margin: 15px 50px 15px 50px;
+}
+
+.question {
+    display: inline-block;
+    
+    margin-left: 50px !important;
+    margin-right: 0px !important;
+    
+    padding: 15px 25px;
+    
+    background-color: #ffe593;
+    
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.response {
+    margin-left: 75px !important;
+    margin-right: 75px !important; 
+    
+    padding: 15px;
+    
+    width: auto;
+    
+    background-color: #ededf1;
+    
+    font-size: 1.2em;
+    font-weight: 500;
 }
