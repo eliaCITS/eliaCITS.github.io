@@ -16,7 +16,7 @@ html, body {
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 0px;
 }
 
 /* Track (Backing) */
@@ -55,6 +55,8 @@ html, body {
     height: 70%;
     
     min-height: 600px;
+    
+    scrollbar-width: none;
     
     overflow-x: hidden;
     overflow-y: scroll;
