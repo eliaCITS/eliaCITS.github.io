@@ -1,0 +1,411 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    text-align: center;
+    
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track (Backing) */
+::-webkit-scrollbar-track {
+  background: #0000;
+}
+
+/* Handle (Bar) */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+.header {
+    width: auto;
+    height: 15%;
+    
+    min-height: 150px;
+}
+
+.header>h1 {
+    position: absolute;
+    
+    bottom: 0;
+    right: 0;
+    
+    margin-bottom: 4%;
+}
+
+.middle {
+    width: auto;
+    height: 70%;
+    
+    min-height: 600px;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    
+    min-height: 95px;
+    
+    text-align: center;
+}
+
+.cc {
+    position: absolute;
+    
+    margin-right: 100px;
+    
+    bottom: 0;
+    right: 0;
+    
+    text-align: end;
+}
+
+/* ------------------------------ Index ------------------------------ */
+.index>.header, .unit>.header, .units>.header, .unit_lesson>.header, .lesson>.header {
+    position: relative;
+    
+    margin: 0% 25%;
+    
+    width: auto;
+    height: 30%;
+    
+    min-height: 275px;
+}
+
+.user_info>* {
+    color: #121212;
+}
+
+.user_info h1 {
+    margin-bottom: 0;
+    
+    font-size: 2.4em;
+    font-weight: 800;
+}
+
+.user_info h2 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.user_info h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.index>.middle, .unit>.middle, .units>.middle, .unit_lesson>.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 65%;
+    
+    min-height: 400px;
+    
+    overflow: scroll;
+}
+
+.index>.footer, .unit>.footer, .units>.footer, .unit_lesson>.footer, .lesson>.footer {
+    position: absolute;
+    
+    margin: auto;
+    
+    height: 5%;
+    min-height: 45px;
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* --- User Info --- */
+.profile_pic {
+    position: absolute;
+    
+    margin: auto;
+    
+    width: 200px;
+    height: 200px;
+    
+    top: 0;
+    bottom: 0;
+    left: 25px;
+}
+
+.user_info {
+    position: absolute;
+    
+    margin: auto;
+    
+    width: auto;
+    height: 250px;
+    
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    
+    text-align: start;
+}
+
+/* ----- Link Blocks ----- */
+.middle .item, .unit .item, .units .item, .unit_lesson .item {
+    display: inline-block;
+    
+    padding: 125px 250px;
+    margin: 0;
+    
+    text-decoration: none;
+    
+    background: linear-gradient(217deg, rgba(1, 163, 227, 1), rgba(1, 163, 227, 0) 70%),
+      linear-gradient(127deg, rgba(255, 218, 96, 1), rgba(255, 218, 96, 0) 70%),
+      linear-gradient(336deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 100%);
+    
+    border-radius: 10px;
+    
+    transition: all .8s;
+    transition-timing-function: ease-in-out;
+}
+
+.index .item {
+    color: #121212;
+    
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+/* ------------------------------ Unit ------------------------------ */
+
+.unit>.middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.unit .item {
+    color: #121212;
+    
+    margin: 15px 25px;
+    padding: 75px 115px;
+    
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.unit .item>span {
+    font-size: 1.35em;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* Colors 
+    dark blue      | #103552 | 16, 53, 82
+    primary_blue   | #01a3e3 | 1, 163, 227
+    primary_yellow | #ffd960 | 255, 217, 96
+    green          | #06b0b0 | 6, 176, 176
+    purple         | #491e6c | 73, 30, 108
+    rose           | #bf5a80 | 191, 90, 128
+    pink           | #f29c9c | 242, 156, 156
+*/
+
+/* green purple pink */
+.unit #one.item {
+    background: linear-gradient(245deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 65%),
+      linear-gradient(151deg, rgba(73, 30, 108, 1), rgba(73, 30, 108, 0) 80%),
+      linear-gradient(20deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 50%);
+}
+
+/* purple rose pink */
+.unit #two.item {
+    background: linear-gradient(330deg, rgba(73, 30, 108, 1), rgba(73, 30, 108, 0) 80%),
+      linear-gradient(190deg, rgba(191, 90, 144, 1), rgba(191, 90, 144, 0) 70%),
+      linear-gradient(90deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 75%);
+}
+
+/* primary_yellow green rose */
+.unit #three.item {
+    background: linear-gradient(315deg, rgba(255, 217, 96, 1), rgba(255, 217, 96, 0) 65%),
+      linear-gradient(181deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 75%),
+      linear-gradient(60deg, rgba(191, 90, 128, 1), rgba(191, 90, 128, 0) 80%);
+}
+
+/* rose pink dark_blue */
+.unit #four.item {
+    background: linear-gradient(265deg, rgba(191, 90, 128, 1), rgba(191, 90, 128, 0) 85%),
+      linear-gradient(180deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 50%),
+      linear-gradient(455deg, rgba(16, 53, 82, 1), rgba(16, 53, 82, 0) 90%);
+}
+
+/* pink primary_yellow purple */
+.unit #five.item {
+    background: linear-gradient(245deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 85%),
+      linear-gradient(151deg, rgba(255, 217, 96, 1), rgba(255, 217, 96, 0) 60%),
+      linear-gradient(20deg, rgba(73, 30, 108, 1), rgba(73, 30, 108, 0) 85%);
+}
+
+/* dark_blue purple primary_blue */
+.unit #six.item {
+    background: linear-gradient(285deg, rgba(16, 53, 82, 1), rgba(16, 53, 82, 0) 85%),
+      linear-gradient(160deg, rgba(73, 30, 108, 1), rgba(73, 30, 108, 0) 90%),
+      linear-gradient(35deg, rgba(1, 163, 227, 1), rgba(1, 163, 227, 0) 75%);
+}
+
+/* ------------------------------ Units ------------------------------ */
+
+.units>.middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.units .item {
+    color: #121212;
+    
+    margin: 25px 75px;
+    padding: 125px 250px;
+    
+    font-size: 3em;
+    font-weight: 600;
+}
+
+/* Colors 
+    dark blue      | #103552 | 16, 53, 82
+    primary_blue   | #01a3e3 | 1, 163, 227
+    primary_yellow | #ffd960 | 255, 217, 96
+    green          | #06b0b0 | 6, 176, 176
+    purple         | #491e6c | 73, 30, 108
+    rose           | #bf5a80 | 191, 90, 128
+    pink           | #f29c9c | 242, 156, 156
+*/
+
+/* rose green primary_yellow */
+.units #one.item {
+    background: linear-gradient(200deg, rgba(191, 90, 128, 1), rgba(191, 90, 128, 0) 75%),
+      linear-gradient(65deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 85%),
+      linear-gradient(290deg, rgba(255, 217, 96, 1), rgba(255, 217, 96, 0) 80%);
+}
+
+/* pink blue green */
+.units #two.item {
+    background: linear-gradient(140deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 100%),
+      linear-gradient(25deg, rgba(1, 163, 227, 1), rgba(1, 163, 227, 0) 100%),
+      linear-gradient(245deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 90%);
+}
+
+/* ------------------------------ Unit Lessons ------------------------------ */
+
+.unit_lesson>.middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.unit_lesson .item {
+    margin: 25px 25px;
+    padding: 85px 150px;
+}
+
+/* ------------------------------ Lessons ------------------------------ */
+
+.lesson>.middle {
+    height: 65%;
+    min-height: 400px;
+}
+
+.unit_lesson .item {
+    color: #121212;
+    
+    margin: 15px 25px;
+    padding: 85px 135px;
+    
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.unit_lesson .item>span {
+    font-size: 1.35em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Colors 
+    dark blue      | #103552 | 16, 53, 82
+    primary_blue   | #01a3e3 | 1, 163, 227
+    primary_yellow | #ffd960 | 255, 217, 96
+    green          | #06b0b0 | 6, 176, 176
+    purple         | #491e6c | 73, 30, 108
+    rose           | #bf5a80 | 191, 90, 128
+    pink           | #f29c9c | 242, 156, 156
+*/
+
+/* purple primary_yellow green */
+.unit_lesson #one.item {
+    background: linear-gradient(194deg, rgba(73, 30, 108, 1), rgba(73, 30, 108, 0) 85%),
+      linear-gradient(111deg, rgba(255, 217, 96, 1), rgba(255, 217, 96, 0) 70%),
+      linear-gradient(358deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 75%);
+}
+
+/* primary_blue green rose */
+.unit_lesson #two.item {
+    background: linear-gradient(318deg, rgba(1, 163, 227, 1), rgba(1, 163, 227, 0) 60%),
+      linear-gradient(164deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 45%),
+      linear-gradient(14deg, rgba(191, 90, 128, 1), rgba(191, 90, 128, 0) 110%);
+}
+
+/* rose dark_blue primary_yellow */
+.unit_lesson #three.item {
+    background: linear-gradient(315deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 95%),
+      linear-gradient(181deg, rgba(16, 53, 82, 1), rgba(16, 53, 82, 0) 75%),
+      linear-gradient(60deg, rgba(255, 217, 96, 1), rgba(255, 217, 96, 0) 80%);
+}
+
+/* pink green primary_blue */
+.unit_lesson #four.item {
+    background: linear-gradient(203deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 75%),
+      linear-gradient(74deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 90%),
+      linear-gradient(297deg, rgba(1, 163, 227, 1), rgba(1, 163, 227, 0) 70%);
+}
+
+/* green pink rose */
+.unit_lesson #five.item {
+    background: linear-gradient(200deg, rgba(6, 176, 176, 1), rgba(6, 176, 176, 0) 75%),
+      linear-gradient(121deg, rgba(191, 90, 128, 1), rgba(191, 90, 128, 0) 95%),
+      linear-gradient(332deg, rgba(242, 156, 156, 1), rgba(242, 156, 156, 0) 120%);
+}
